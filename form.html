@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div id="container-2">
+        <header>
+            <h1>
+                <div>Webflix</div>
+                <div>Movies</div>
+            </h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="form.html">Form</a>
+            </nav>
+        </header>
+
+        <section id="poster">
+            <h1 class="form-title">Film form</h1>
+        </section>
+
+
+        <section id="breadcrums">
+            <div>
+                <p><a href="index.html">Home</a> > <span class="current-page">Film Form</span></p>
+            </div>
+        </section>
+
+
+        <section id="left-aside" class="aside">
+            <div>
+                <h2>How to add a new movie</h2>
+
+                <p>Fill out the form to add a new movie and enter the following information:</p>
+                <ul class="form-info">
+                    <li>Movie name</li>
+                    <li>Age rating</li>
+                    <li>Genre</li>
+                    <li>Country of release</li>
+                    <li>Release date</li>
+                    <li>Movie rating</li>
+                    <li>Your email</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <main id="main-movie" class="description">
+            <form id="form">
+                <!-- Title -->
+                <h1>Submit a new movie</h1>
+
+                <!-- Full Name Input -->
+                <label for="moviename">Movie name:</label><br>
+                <input type="text" id="moviename" name="moviename" required class="full"><br>
+
+                <!-- Radio Input (Age rating) -->
+                <p>Age rating:</p>
+                <input type="radio" id="rated_g" name="age_rating" value="rated_g" class="radio-thickness">
+                <label for="rated_g">Rated G</label><br>
+                <input type="radio" id="rated_pg" name="age_rating" value="rated_pg" class="radio-thickness">
+                <label for="rated_pg">Rated PG</label><br>
+                <input type="radio" id="rated_r" name="age_rating" value="rated_r" class="radio-thickness">
+                <label for="rated_r">Rated R</label><br>
+
+                <!-- Checkbox Input () -->
+                <p>Genre:</p>
+                <input type="checkbox" id="genre1" name="genre" value="Fantasy">
+                <label for="genre1">Fantasy</label><br>
+                <input type="checkbox" id="genre2" name="genre" value="Science_fiction">
+                <label for="genre2">Science fiction</label><br>
+                <input type="checkbox" id="genre3" name="genre" value="Romance">
+                <label for="genre3">Romance</label><br>
+
+                <!-- Dropdown Input (Country) -->
+                <label for="country">Country where the movie was first released</label><br>
+                <select name="country" id="country" class="full">
+                    <optgroup label="North America">
+                        <option value="usa">United States</option>
+                        <option value="canada">Canada</option>
+                        <option value="mexico">Mexico</option>
+                    </optgroup>
+                    <optgroup label="Europe">
+                        <option value="uk">United Kingdom</option>
+                        <option value="germany">Germany</option>
+                        <option value="france">France</option>
+                    </optgroup>
+                    <optgroup label="Oceania">
+                        <option value="australia">Australia</option>
+                        <option value="new_zealand">New Zealand</option>
+                    </optgroup>
+                </select><br>
+
+                <!-- Date Input -->
+                <label for="release_date">Release date:</label><br>
+                <input type="date" id="release_date" name="release_date" required class="full"><br><br>
+
+                <!-- Number Input (Movie rating 1-10) -->
+                <label for="movie_rating">Movie rating (1-10):</label><br>
+                <input type="number" id="movie_rating" name="movie_rating" min="1" max="10" required class="full"><br>
+
+                <!-- Email Input -->
+                <label for="email">Enter your email:</label><br>
+                <input type="email" id="email" name="email" required class="full"><br>
+
+                <!-- File Input (Resume) -->
+                <label for="file">Upload movie poster (webp):</label><br>
+                <input type="file" id="file" name="file" accept=".webp" required><br>
+
+                <!-- Submit Button -->
+                <input type="submit" value="Submit Application">
+
+            </form>
+
+        </main>
+
+        <footer>
+            <p> &copy; 2025 Webflix Movies (made by Dhani Taelman)</p>
+            <p><a class="actor-movie-link" href="about.html">About me</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
